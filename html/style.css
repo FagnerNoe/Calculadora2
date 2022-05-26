@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(-120deg,rgb(0, 255, 221),green);
+    padding: 30px 0; /* cria espaçamento "interno" entre seus 4 lados      */
+}
+.calculadora{
+
+    width: 400px;           /* largura  */
+    margin:auto;           /* cria um espaçamento externo */
+    background-color:rgb(224, 211, 37);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(29, 3, 3);  /* Sombra no elemento(caixa)*/
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;       /* Altura*/
+    margin-bottom: 20px;    /* Define a margem na parte inferior de um elemento*/
+    padding:15px;     /*distancia entre elementos e bordas*/
+    background-image: linear-gradient(-45deg,orange,red);
+    color:rgb(240, 233, 233);
+    font:normal 4rem serif;
+    overflow: hidden;       /* especifica qd conteudo de um elemento deve ser cortado,exibido ou transborda do display*/
+    border-radius: 5px;
+
+}
+.botoes-calculos{       /* Display controla o layout*/
+    display: grid; /* configura layout em duas dimensoes(linhas e colunas)*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Especifica o numero de colunas e larguras num layout*/
+    grid-gap: 10px; /*Define espaçamentos entre elementos do layout em grid */
+}
+
+.calculadora button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    cursor:pointer; /* Configura o tipo do mouse ao passar por cima do elemento*/
+
+}
+button:hover{               /* faz mudanca da cor do elemento ao ser selecionado, ou mouse passando por cima */
+    background-color: yellow; /* cor que ficara ao mouse passar por cima*/
+    color: rgb(126, 38, 57);     /* cor interna do elemento que altera junto ao passar o mouse*/
+}
+
+ button#zerarDisplay{
+    background-color:  rgb(212, 0, 255);}
+ button#zerarCalculo{
+     background-color: rgb(32, 212, 62);}
+ button#voltarCasa{
+     background-color: rgb(240, 48, 48);}
+ button#operadorDivisao{
+     background-color: blue;}
+ button#operadorSubtracao{
+     background-color: rgb(20, 190, 154);}
+ button#operadorMultiplicar{
+     background-color:purple;}
+ button#operadorAdicionar{
+     background-color: pink;}
+ button#igual{
+     background-color: orange;}
+
+
+
